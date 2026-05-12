@@ -492,3 +492,129 @@ footer {
     }
 
 }
+
+/* apoie css */
+
+.apoio-container {
+    text-align: center;
+}
+
+.apoio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pix-card,
+.apoio-info {
+    background: rgba(255,255,255,0.7);
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.pix-card h3,
+.apoio-info h3,
+.comprar-livro h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--purple);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.pix-qr {
+    width: 230px;
+    max-width: 100%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.pix-key {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border: 1px solid rgba(122,36,216,0.15);
+    word-break: break-word;
+}
+
+.pix-feedback {
+    display: block;
+    margin-top: 15px;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+.valor-card {
+    background: white;
+    border-radius: 20px;
+    padding: 18px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(122,36,216,0.08);
+}
+
+.valor-card strong {
+    color: var(--purple);
+    font-size: 1.2rem;
+}
+
+.valor-card span {
+    color: var(--gray);
+}
+
+.apoio-extra {
+    margin-top: 25px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.comprar-livro {
+    margin-top: 60px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.comprar-livro p {
+    color: var(--gray);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.comprar-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+@media(max-width: 768px){
+
+    .pix-card,
+    .apoio-info,
+    .comprar-livro{
+        padding: 25px;
+    }
+
+    .valor-card{
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .comprar-buttons{
+        flex-direction: column;
+    }
+
+    .comprar-buttons .btn{
+        width: 100%;
+    }
+
+}
