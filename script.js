@@ -42,3 +42,23 @@ menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 
 });
+
+// apoie js
+
+const copyPix = document.getElementById('copyPix');
+
+if(copyPix){
+
+    copyPix.addEventListener('click', () => {
+
+        const pixKey =
+        document.getElementById('pixKey').innerText;
+
+        navigator.clipboard.writeText(pixKey);
+
+        document.getElementById('pixFeedback').innerText =
+        'Chave PIX copiada com sucesso!';
+
+    });
+
+}
